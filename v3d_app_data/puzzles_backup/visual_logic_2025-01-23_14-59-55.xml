@@ -1,0 +1,100 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="384.54122729678375" scrolly="591.108" scale="0.99225">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="~$/Oe71gqB)^_.:Z~Q|3">battery</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="2;Dv9/}}PW0X4LZsSy4o" x="50" y="10">
+      <value name="IF0">
+        <block type="logic_compare" id="_JtnBC1]]ko.$ko!tF~{">
+          <field name="OP">EQ</field>
+          <value name="A">
+            <block type="variables_get" id="2n0^tF5/r%-cMDqH.Al%">
+              <field name="VAR" id="~$/Oe71gqB)^_.:Z~Q|3">battery</field>
+            </block>
+          </value>
+          <value name="B">
+            <block type="logic_boolean" id="kV?5sdUy;,-jH$OUyY+v">
+              <field name="BOOL">FALSE</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="whenClicked" id="9q{:H~Tgl:(-.y#d)R,X" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="U~/Liw)bohB_7yXhicD,">
+              <field name="FIELDNAME">BATTERY(TEXT)</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="I.x_#MIPI6D%@]:NRRw)">
+              <field name="VAR" id="~$/Oe71gqB)^_.:Z~Q|3">battery</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="#):2C]XM%OX^O5{5qNc+">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="Y0#0Te-t/IaLP}3tL6Qd">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="e$;N)aHR0cWIg?T1tc;r">
+                      <field name="FIELDNAME">BATERAI</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="FHD`!ervPx@UvQ}~l5j5" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~`qZ(z540yEt@){7GFu^">
+                  <field name="FIELDNAME">BATERAI</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="variables_set" id="[Po+d^yj0Rpp}})GH4$-">
+                  <field name="VAR" id="~$/Oe71gqB)^_.:Z~Q|3">battery</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id="IQ78!c?*GH7IIo6Dp/$y">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="playAnimationAdv" id="0Ye$3#mdnaK6rQAHQ3[5">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                      <field name="REVERSED">FALSE</field>
+                      <field name="LOOP">LoopOnce</field>
+                      <value name="VALUE">
+                        <shadow type="animationList" id="+dwait`kBE.S*I:3-ES*">
+                          <field name="FIELDNAME">BATERAI</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1134" viewport-y="37" viewport-w="768" viewport-h="472.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

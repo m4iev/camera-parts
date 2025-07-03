@@ -1,0 +1,56 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="20" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="196.44050248146414" scrolly="98.91682772910394" scale="0.99225">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="~$/Oe71gqB)^_.:Z~Q|3">battery</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="2;Dv9/}}PW0X4LZsSy4o" x="50" y="10">
+      <value name="IF0">
+        <block type="logic_compare" id="_JtnBC1]]ko.$ko!tF~{">
+          <field name="OP">EQ</field>
+          <value name="A">
+            <block type="variables_get" id="2n0^tF5/r%-cMDqH.Al%">
+              <field name="VAR" id="~$/Oe71gqB)^_.:Z~Q|3">battery</field>
+            </block>
+          </value>
+          <value name="B">
+            <block type="logic_boolean" id="kV?5sdUy;,-jH$OUyY+v">
+              <field name="BOOL">FALSE</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="whenClicked" id="9q{:H~Tgl:(-.y#d)R,X" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <field name="DOUBLE_CLICK">FALSE</field>
+          <field name="LEFT_BUTTON">TRUE</field>
+          <field name="MIDDLE_BUTTON">TRUE</field>
+          <field name="RIGHT_BUTTON">TRUE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="U~/Liw)bohB_7yXhicD,">
+              <field name="FIELDNAME">BATTERY(TEXT)</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="whenClicked" id="FHD`!ervPx@UvQ}~l5j5" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~`qZ(z540yEt@){7GFu^">
+                  <field name="FIELDNAME">BATERAI</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1134" viewport-y="37" viewport-w="768" viewport-h="472.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

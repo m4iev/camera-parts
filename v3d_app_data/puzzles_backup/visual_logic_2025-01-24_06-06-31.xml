@@ -1,0 +1,1256 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="-269.68671961079076" scrolly="293.7925595105502" scale="0.6548623765145806">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="~$/Oe71gqB)^_.:Z~Q|3">battery</variable>
+      <variable id="_rhMZ@`Q[DK;/rK;W^5=">handle</variable>
+      <variable id="DO(se$5w7GgkCOOl_(t?">hood</variable>
+      <variable id="Pm*eo7l-BK(!WHVo+2VM">lens</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="loadSoundAdv" id="I4c;5cP;6UT$^P=)-qXi" x="-1050" y="-970">
+      <field name="TYPE">SOUND</field>
+      <value name="URL">
+        <shadow type="text" id="RG]!y~9E?9L={],0~H2^">
+          <field name="TEXT">mySound.mp3</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="RH}8ms~g~gZmrFr?L6sn" x="-190" y="-790">
+      <field name="VAR" id="~$/Oe71gqB)^_.:Z~Q|3">battery</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="AZt9=;ZP;gs`yluAQoE(">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="Ne|azY^KBuZ4ucoJGgRM" x="-190" y="-730">
+      <field name="VAR" id="_rhMZ@`Q[DK;/rK;W^5=">handle</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="}sBK/DQ4}8~~t8B^xK(i">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="01ah,y/2O`/or}:Ukb0W" x="-190" y="-670">
+      <field name="VAR" id="DO(se$5w7GgkCOOl_(t?">hood</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id=",bKe:1p,((Uf2mWi.iBy">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="gN[o2)sQ4Xx6vmqHEQW]" x="-190" y="-610">
+      <field name="VAR" id="Pm*eo7l-BK(!WHVo+2VM">lens</field>
+      <value name="VALUE">
+        <block type="logic_boolean" id="jBmKkmSao;UxMLyM/8Lr">
+          <field name="BOOL">FALSE</field>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="n=v2r$TzHe5P}N:}ZE1*" inline="false" x="-330" y="-550">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="mlwC#S:_a:E#]^bkI9Z-">
+          <field name="FIELDNAME">BATERAI</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="YDHjB#|0rsL,,saY.A!_">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="P-~C0|cf5aGS+$oMluQ/">
+              <field name="FIELDNAME">BATERAI</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="HM/`V2XXV{j~x:yYFEAX">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="m5UF$S{#+%]C?u(~+/q5">
+                  <field name="FIELDNAME">BATTERY(TEXT)</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="controls_if" id="^5Ixm1wq-3|_sM`_o)74">
+                  <value name="IF0">
+                    <block type="logic_compare" id="F:1bSG]v:50kElG|te!5">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="isSoundPlaying" id="+Em24,J/q8B)mu_=D`h:">
+                          <value name="VALUE">
+                            <block type="loadSoundAdv" id="~!ib#fiU62RkR/)7`Vmr">
+                              <field name="TYPE">SOUND</field>
+                              <value name="URL">
+                                <shadow type="text" id="(,gFGE+oTQ3j4CT;7;pO">
+                                  <field name="TEXT">audio/baterai.mp3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id="75inMAe.7I::GaHXZ:DF">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="stopSound" id="8~Ys9LlA}8F!BwIvW%WS">
+                      <value name="VALUE">
+                        <block type="loadSoundAdv" id="-n:{rk*k7lV`DH]E6jGD">
+                          <field name="TYPE">SOUND</field>
+                          <value name="URL">
+                            <shadow type="text" id="q9^k*,J6C2TPZX|1Hf#q">
+                              <field name="TEXT">audio/hood.mp3</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="stopSound" id="77]KMk3`GG##0T5*.-,D">
+                          <value name="VALUE">
+                            <block type="loadSoundAdv" id="yYNuPZ^De.M,)V#||)DQ">
+                              <field name="TYPE">SOUND</field>
+                              <value name="URL">
+                                <shadow type="text" id="=h$5n!2XdQJH$07SAc]n">
+                                  <field name="TEXT">audio/gagang.mp3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="stopSound" id="6z[c31t]+81^]flh7zb8">
+                              <value name="VALUE">
+                                <block type="loadSoundAdv" id="/;!x*+WBYxk6Y[%,~5Sh">
+                                  <field name="TYPE">SOUND</field>
+                                  <value name="URL">
+                                    <shadow type="text" id="jWawGr=~PZ)tsVwvRPZ!">
+                                      <field name="TEXT">audio/lensa.mp3</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="playSound" id="[3jNP8+5oy*gg1QLoA6X">
+                                  <field name="LOOP">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="loadSoundAdv" id="{Xw4P9xnvE-o^VG+}4Uu">
+                                      <field name="TYPE">SOUND</field>
+                                      <value name="URL">
+                                        <shadow type="text" id="D1vIWlK?JU#T/fXj-x|P">
+                                          <field name="TEXT">audio/baterai.mp3</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="6)H|(N@$K)t/WS;G)SuJ">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="0sXM3/otIze0nokw!!b=">
+              <field name="FIELDNAME">BATERAI</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="x6}s8#%y=-iNfv3cg%i_">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="il9[W=}[gz/fv|g#]Z!m">
+                  <field name="FIELDNAME">BATTERY(TEXT)</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="=Q0p]AFZmotcl9V./36," inline="false" x="370" y="-550">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="1cbmSJ9H|2YPuwvfM~;2">
+          <field name="FIELDNAME">BATTERY(TEXT)</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="d!NPP@BTw_31%iZGNb$s">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="q6A#LGe+/dtIvgAx;:)@">
+              <field name="FIELDNAME">BATTERY(TEXT)</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="9c6h6BtcxkFQb|6bI=v2">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="jzIX}JtM,{|!hhEYY@o=">
+                  <field name="FIELDNAME">BATERAI</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="controls_if" id="Do;R$i-kn!@qzoP}6lIB">
+                  <value name="IF0">
+                    <block type="logic_compare" id="GTj:!ccBJx[odQv,sF8?">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="isSoundPlaying" id="F#`QllMj|nIU_4a}aW0b">
+                          <value name="VALUE">
+                            <block type="loadSoundAdv" id="alrT6vJ{e?cqO3yt(O13">
+                              <field name="TYPE">SOUND</field>
+                              <value name="URL">
+                                <shadow type="text" id="XPVq/ojM)Gi6+`O.:Ix]">
+                                  <field name="TEXT">audio/baterai.mp3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id="|dnGBXgG:ojH3T@bLXvO">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="stopSound" id="J!XRS:fppjnMOnux~v?0">
+                      <value name="VALUE">
+                        <block type="loadSoundAdv" id=",n+|eFN_iy^a[H]],Q5Q">
+                          <field name="TYPE">SOUND</field>
+                          <value name="URL">
+                            <shadow type="text" id="Hj-CyljD~YIK9|~_j6lL">
+                              <field name="TEXT">audio/hood.mp3</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="stopSound" id="p[hZwe^.XPPT05}/^ZJ#">
+                          <value name="VALUE">
+                            <block type="loadSoundAdv" id="s^~jCCmv!Ke7U{vngzCF">
+                              <field name="TYPE">SOUND</field>
+                              <value name="URL">
+                                <shadow type="text" id="A5H8CD3=3V)`hv=S0(Cg">
+                                  <field name="TEXT">audio/gagang.mp3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="stopSound" id="IYIKqa-yP5Hz1Q=s-t2`">
+                              <value name="VALUE">
+                                <block type="loadSoundAdv" id="gBU!irkB|a..1d38_+dh">
+                                  <field name="TYPE">SOUND</field>
+                                  <value name="URL">
+                                    <shadow type="text" id="Q7bS`A?0u?||[/%fcBZ?">
+                                      <field name="TEXT">audio/lensa.mp3</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="playSound" id="AIxv@PX)4[z(6}!#DPbV">
+                                  <field name="LOOP">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="loadSoundAdv" id="k9z:Del.8=:w`;7vPd.?">
+                                      <field name="TYPE">SOUND</field>
+                                      <value name="URL">
+                                        <shadow type="text" id="%qooJ./MT_ilN/Oe##V/">
+                                          <field name="TEXT">audio/baterai.mp3</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="i`{#-@h;0^FrscL9=O?o">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="%D0qn/g{+)lLn!9~--X%">
+              <field name="FIELDNAME">BATTERY(TEXT)</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="0s@(2ps.yf2d+(?sFN`,">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="^ME[9qR#//jCVhp6EZTB">
+                  <field name="FIELDNAME">BATERAI</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="A5=dYrB]4y(NkzX%?)fA" inline="false" x="1110" y="-190">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="BT#4aG#tZHQ/WxAhLnCn">
+          <field name="FIELDNAME">LENSA</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="%6%-b/%8QD{Zqbljh)Rj">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="B~;B~P0L~W-EpL7p|5/e">
+              <field name="FIELDNAME">LENSA</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="FSu=Dh}MgV$FiIP{2D;K">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id=";xf7aj34Of%@tLbOEra?">
+                  <field name="FIELDNAME">LENS (TEXT)</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="controls_if" id="8jmKwSoqS!3i~ol]`bz!">
+                  <value name="IF0">
+                    <block type="logic_compare" id="9DdALFn/7G4-`(vaW34n">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="isSoundPlaying" id="GA8m!:C-s3DttA6[Hy8X">
+                          <value name="VALUE">
+                            <block type="loadSoundAdv" id="+f`/(,O]eIMi`b.uoNys">
+                              <field name="TYPE">SOUND</field>
+                              <value name="URL">
+                                <shadow type="text" id="DNihCoMGI)-,9{j^EMg3">
+                                  <field name="TEXT">audio/lensa.mp3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id="mPZ]Pcb5QKm4p;u$+gx:">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="stopSound" id="/0L@WHfOCse4Qf8:rv)-">
+                      <value name="VALUE">
+                        <block type="loadSoundAdv" id="NQ11oY;Ezz(iJ?Lq*5yz">
+                          <field name="TYPE">SOUND</field>
+                          <value name="URL">
+                            <shadow type="text" id=",)=j)#_a;3c`0F.9fLBr">
+                              <field name="TEXT">audio/hood.mp3</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="stopSound" id="W8P`-V}Q!1F*BLIaGq)#">
+                          <value name="VALUE">
+                            <block type="loadSoundAdv" id="r!U%vbS%E%m(R@R_:*+N">
+                              <field name="TYPE">SOUND</field>
+                              <value name="URL">
+                                <shadow type="text" id="#XhfA=E-.Op30=.q6DBN">
+                                  <field name="TEXT">audio/gagang.mp3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="stopSound" id="~}{S|0xT$6G$+-dJx]BU">
+                              <value name="VALUE">
+                                <block type="loadSoundAdv" id="%uyjv(UzI,149cC%x:x{">
+                                  <field name="TYPE">SOUND</field>
+                                  <value name="URL">
+                                    <shadow type="text" id="F*^VfesXr!j)vp.C9zy;">
+                                      <field name="TEXT">audio/baterai.mp3</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="playSound" id="n5_JAI.lvC(NTDofr7AR">
+                                  <field name="LOOP">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="loadSoundAdv" id="q|@qbkGx7:q|@e,G8R%q">
+                                      <field name="TYPE">SOUND</field>
+                                      <value name="URL">
+                                        <shadow type="text" id="DVx|nGiy}usP9}$W*)lK">
+                                          <field name="TEXT">audio/lensa.mp3</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="P_d8[OT{5ROLmwqM;!n`">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="Sp7XGrzjigcO*W@!EfG^">
+              <field name="FIELDNAME">LENSA</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="%u4aG3ode8e9Qn3s|!2h">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="IyKeZ@*_fe5F,t/^zdCR">
+                  <field name="FIELDNAME">LENS (TEXT)</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="EoR`1t0/YYF?{AndKCdJ" inline="false" x="1850" y="-190">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="kEo%3l~IAC4w4uLq~E0n">
+          <field name="FIELDNAME">LENS (TEXT)</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="RT;9!@v;wrK6ML%x(/u_">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="|QJ$?GbW^9!uX0LE)!|1">
+              <field name="FIELDNAME">LENS (TEXT)</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id=".1=v},*%Pq|lSeCy6is:">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="]J[s3179sw~]evIRoWx{">
+                  <field name="FIELDNAME">LENSA</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="controls_if" id="poIARs]+7j%Zk;.Yllb/">
+                  <value name="IF0">
+                    <block type="logic_compare" id="d_Gf?;B7L9-WD68`a=t_">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="isSoundPlaying" id="1m5Wgamp0W]Lhkw+^Ir!">
+                          <value name="VALUE">
+                            <block type="loadSoundAdv" id="5:dx1%1R[2^eW/F??5^L">
+                              <field name="TYPE">SOUND</field>
+                              <value name="URL">
+                                <shadow type="text" id="9il4o|p-Cu#8M/4[#kUn">
+                                  <field name="TEXT">audio/lensa.mp3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="logic_boolean" id="O4vi0W7o,ko)bf+@(=~v">
+                          <field name="BOOL">FALSE</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="stopSound" id="N=._|SbH%Pg@7n{!!YKh">
+                      <value name="VALUE">
+                        <block type="loadSoundAdv" id="]CtQCsp8Q4tI8_(7/?pb">
+                          <field name="TYPE">SOUND</field>
+                          <value name="URL">
+                            <shadow type="text" id="EM//ayVG)zB9uhXuitdX">
+                              <field name="TEXT">audio/hood.mp3</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="stopSound" id="}Xw|n]qaA^f;T:.v1K6)">
+                          <value name="VALUE">
+                            <block type="loadSoundAdv" id="Ufpf0lGH!I_1T:AC;03$">
+                              <field name="TYPE">SOUND</field>
+                              <value name="URL">
+                                <shadow type="text" id="w-7VHCIO0-BGSSl|%|q~">
+                                  <field name="TEXT">audio/gagang.mp3</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="stopSound" id="`)i9)BlzBu`06}:joXnn">
+                              <value name="VALUE">
+                                <block type="loadSoundAdv" id=",G;_r@FoZEnC)_sr_?M*">
+                                  <field name="TYPE">SOUND</field>
+                                  <value name="URL">
+                                    <shadow type="text" id="TGBxc@+3a[fI.}D7%Mw:">
+                                      <field name="TEXT">audio/baterai.mp3</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="playSound" id="#mi*4`25jpt_y/Tv%#B5">
+                                  <field name="LOOP">FALSE</field>
+                                  <value name="VALUE">
+                                    <block type="loadSoundAdv" id="@a5eJGzLiv||}omC^9i^">
+                                      <field name="TYPE">SOUND</field>
+                                      <value name="URL">
+                                        <shadow type="text" id="wD$@zx=I^N3%Q%}-tVpt">
+                                          <field name="TEXT">audio/lensa.mp3</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="+!UuzA:T,a?~)9FUkvD;">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="!@EoQ}tLpQ[7m/i8vVRB">
+              <field name="FIELDNAME">LENS (TEXT)</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="]9*dT85@~j!]R=Y6nWr%">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="OM0w$EvKJjk/|];{e.gB">
+                  <field name="FIELDNAME">LENSA</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="FHD`!ervPx@UvQ}~l5j5" inline="false" x="-119" y="-77">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="~`qZ(z540yEt@){7GFu^">
+          <field name="FIELDNAME">BATERAI</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="J}n-XMTTP$8s%0NgRHfe">
+          <value name="IF0">
+            <block type="logic_compare" id="y5LT;otUZbmgolp1L8_o">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="5|b@R]lfMZ304A!yPuEH">
+                  <field name="VAR" id="~$/Oe71gqB)^_.:Z~Q|3">battery</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="aVrFKD+2BMiUnbTE7i=Z">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="%s2bI2OFQmp4/#2O!;;S">
+              <field name="VAR" id="~$/Oe71gqB)^_.:Z~Q|3">battery</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="v-ZR{+`*_bA:F(+#j0KL">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="TIJ.[x(x3z*q%b+0T(lC">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="v{icHV2df[L{Yitw!0]r">
+                      <field name="FIELDNAME">BATERAI</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="c;+{G{^RyPse{f(x;AfT" inline="false" x="-1350" y="-10">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id=")6THb58O4fnEs1GqXXXd">
+          <field name="FIELDNAME">173</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="Z_L?U`}Y6|o7p)D/7~6v">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="cKq(t;Lr,1QO98wFNik@">
+              <field name="FIELDNAME">173</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="=o619F)H5bY~!B:X;U@[">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id=")x!?g]618y#Gy~soVr=^">
+                  <field name="FIELDNAME">HOOD(TEXT)</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="~m4;$k=NIHQxDjVkz};R">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id=";dqF,dSV[K)ku[TSmjNh">
+              <field name="FIELDNAME">173</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="]=xew+R]YIvn8xzr#.!B">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="|yE!5ss~u`gY5+^L_^I!">
+                  <field name="FIELDNAME">HOOD(TEXT)</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="=1?(1Qp]YF9V,Rpe~9Ts" inline="false" x="-830" y="-10">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="Ay%M~uh6M0GsQ{@3.4-#">
+          <field name="FIELDNAME">HOOD(TEXT)</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="NS(D/IE!k-{-$FPe:1O*">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="$w)K+0Br*J$EVgAt$p%c">
+              <field name="FIELDNAME">HOOD(TEXT)</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="(./PN@i{Pt#Sw=!i#(o3">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="]l$-Mrg+6MsmSiC/KQPc">
+                  <field name="FIELDNAME">173</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="9SlSJbEVy=o$otQ*]u])">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id=";!9Zz9n5(*{b/)V-8al{">
+              <field name="FIELDNAME">HOOD(TEXT)</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="?b{YC?2cmdsYQKbUN).#">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="b9=Zy+aL6tF~*ZU13L(S">
+                  <field name="FIELDNAME">173</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="9q{:H~Tgl:(-.y#d)R,X" inline="false" x="375" y="-73">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="U~/Liw)bohB_7yXhicD,">
+          <field name="FIELDNAME">BATTERY(TEXT)</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="2;Dv9/}}PW0X4LZsSy4o">
+          <value name="IF0">
+            <block type="logic_compare" id="_JtnBC1]]ko.$ko!tF~{">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="2n0^tF5/r%-cMDqH.Al%">
+                  <field name="VAR" id="~$/Oe71gqB)^_.:Z~Q|3">battery</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="kV?5sdUy;,-jH$OUyY+v">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="I.x_#MIPI6D%@]:NRRw)">
+              <field name="VAR" id="~$/Oe71gqB)^_.:Z~Q|3">battery</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="#):2C]XM%OX^O5{5qNc+">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="Y0#0Te-t/IaLP}3tL6Qd">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="e$;N)aHR0cWIg?T1tc;r">
+                      <field name="FIELDNAME">BATERAI</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="aaa9xwgrhMAK~fAUlPv^" inline="false" x="-1550" y="210">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="Et=Ymfo^otEBQPFa$6iC">
+          <field name="FIELDNAME">173</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="fmA7)tML;.+rPVu4cujA">
+          <value name="IF0">
+            <block type="logic_operation" id="#6=f;}og6)KM`_8Ipx[@">
+              <field name="OP">AND</field>
+              <value name="A">
+                <block type="logic_compare" id="(IG!3z#go)2J0U;%I0AN">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="wo9.3!VR*%68kvS$p/`@">
+                      <field name="VAR" id="DO(se$5w7GgkCOOl_(t?">hood</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_boolean" id="1ug2O;TIX3G1i4pJHb`2">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_compare" id="U07I5FD[mkCCQ]Vp2Y~A">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="#U.U)eoGnC/`6:Rm=}Xa">
+                      <field name="VAR" id="Pm*eo7l-BK(!WHVo+2VM">lens</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_boolean" id="]_]7^2j~**-z!A1V!MW+">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="dYiHkPJm9JNvWdOC0|]d">
+              <field name="VAR" id="DO(se$5w7GgkCOOl_(t?">hood</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="iJ?XkrrFup]*^=e7T0an">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="pSr`1^MImpVzyR,JrK%d">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="o}1|}~#6[*]78;}*cirJ">
+                      <field name="FIELDNAME">173</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id=",C(n308X|!+ixPTRx@V+" inline="false" x="-890" y="230">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="NDnsNk4AH%T`(HWDt,zz">
+          <field name="FIELDNAME">HOOD(TEXT)</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="!Xl+1z-1!y6Ugm0OfLZ/">
+          <value name="IF0">
+            <block type="logic_operation" id="%TvMcM%PTW@.(i}[Ef{|">
+              <field name="OP">AND</field>
+              <value name="A">
+                <block type="logic_compare" id="kbE+V}hmLc/uOZI,g?V-">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="Gxfps6g8{@C:`8.tA@q9">
+                      <field name="VAR" id="DO(se$5w7GgkCOOl_(t?">hood</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_boolean" id="$BDon%r+I$2gx`-s%0v)">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_compare" id="CUfj-cr-V)UDHlOcIMaU">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="6hr3u7p*,vWG}OdT%5i^">
+                      <field name="VAR" id="Pm*eo7l-BK(!WHVo+2VM">lens</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="logic_boolean" id="_O)h*O]|WTLc7muRjbsl">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="9+:IceJ_3h3q#;)Xg1H/">
+              <field name="VAR" id="DO(se$5w7GgkCOOl_(t?">hood</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="hQlbetXjI`o7L73nytbm">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="iwJLz$v7.L}j,/S9v%{?">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="VZOD5*1Q|dW~WX4|]7o0">
+                      <field name="FIELDNAME">173</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="l/2K[*gDT.J;OPHJR8FV" inline="false" x="-190" y="310">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="WEApG9p~+xw(4ZYGs[]!">
+          <field name="FIELDNAME">PEGANGAN</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="7Ei+We]aK*Q~q(nX+BaF">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="f5eeYuT=amy3]l65ikx6">
+              <field name="FIELDNAME">PEGANGAN</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="U(sk!UTv6.N~NylC#y*x">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="ixzhy=at~SO5MZ}X!82,">
+                  <field name="FIELDNAME">HANDLE (TEXT)</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="fV[t%HD|3KhCAH1(h*]^">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="8=oJ|#).Z:R[+M#0F%O8">
+              <field name="FIELDNAME">PEGANGAN</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="t6CM_2S*U0^H!@,,l]os">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="[pX3M#`zvA9dH,P%_1j]">
+                  <field name="FIELDNAME">HANDLE (TEXT)</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="RL=,q`Dkp_XMLo7#s/pt" inline="false" x="1200" y="243">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="$Zj%M^b]NP_6).9y74=w">
+          <field name="FIELDNAME">LENSA</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="m{Q!=c?930WjBpPv~?3M">
+          <value name="IF0">
+            <block type="logic_compare" id="w765zZTa#73;$QOSA}nP">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="v}Zj%~nzNLx~IcYvW5?p">
+                  <field name="VAR" id="Pm*eo7l-BK(!WHVo+2VM">lens</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id=".4ozmvC0`i@Qb8uS[984">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="X/V+/:B[v5,CW,]j]^7d">
+              <field name="VAR" id="Pm*eo7l-BK(!WHVo+2VM">lens</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="{.*N?B`M/}zfLoLj.cBd">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="25[By[`33iEPdHvx2W)+">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="yz.X^FO[%Ii)7Gr~tgKe">
+                      <field name="FIELDNAME">LENSA</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenHovered" id="%rmF|R-ODg(mEkVYi)a%" inline="false" x="330" y="310">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="S+I2!phd9_e~m4L1$h[w">
+          <field name="FIELDNAME">HANDLE (TEXT)</field>
+        </shadow>
+      </value>
+      <statement name="DO_OVER">
+        <block type="outline" id="vG{1?5lEXH%pmm6c2oSh">
+          <field name="DO_WHAT">ENABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id="8#NHh$lqU:9IKPt%r#4!">
+              <field name="FIELDNAME">HANDLE (TEXT)</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="5?cI[yT=ZQ]F!Nj[R40u">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="B9M9s{[M71J]ZZHT.2;j">
+                  <field name="FIELDNAME">PEGANGAN</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <statement name="DO_OUT">
+        <block type="outline" id="7]4T5nCuamxg]tk.xD^)">
+          <field name="DO_WHAT">DISABLE</field>
+          <value name="TARGET">
+            <shadow type="objectList" id=",.Q%6A|:[yk(uGrUtu2h">
+              <field name="FIELDNAME">HANDLE (TEXT)</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="outline" id="PRe4),(aqZ~!}.tyNfj3">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="xBhzY1~^sYEf4`M|Bp:(">
+                  <field name="FIELDNAME">PEGANGAN</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="V3zS%FW#zqyWz{Z;{Jz1" inline="false" x="1701" y="244">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="En-O-,g%W0cUrai8PSv%">
+          <field name="FIELDNAME">LENS (TEXT)</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="#R6,yrp0a`]$CotQO0tg">
+          <value name="IF0">
+            <block type="logic_compare" id="OH-S=;:zNF])w2j]Jh1Z">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="9=8qKRMUz-t7jO4%Y/Z,">
+                  <field name="VAR" id="Pm*eo7l-BK(!WHVo+2VM">lens</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="TnCZ]O8%P=F{]XbFtCbu">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="KPk%^NwC5#hppuu_n31L">
+              <field name="VAR" id="Pm*eo7l-BK(!WHVo+2VM">lens</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="-XMSfO9K4@2!]G9[liug">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="io=2+cPtC:yLyqrqaxZu">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="yN!+#rJ2.W~aP-;r,uPD">
+                      <field name="FIELDNAME">LENSA</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id=",XNAooYI;{`jas5K~a6f" inline="false" x="-190" y="490">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="n5e.LMQNDVY%oq6U~U]L">
+          <field name="FIELDNAME">PEGANGAN</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id=",94$!gx}u+LK6*=[D@$X">
+          <value name="IF0">
+            <block type="logic_compare" id="bRs-f3sjZmUV.Hr8AYKa">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="_Fb[Do~Z$ep5`-yA:{vn">
+                  <field name="VAR" id="_rhMZ@`Q[DK;/rK;W^5=">handle</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="V=gsZUlu$r;EYf9rF~uj">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="fmZ:R17Io,VFxzV/%sOg">
+              <field name="VAR" id="_rhMZ@`Q[DK;/rK;W^5=">handle</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="=LFY4rjlYb{xMWA[|2R1">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="{B`Z{k[n#FOLC=m4]l?6">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="K,8?YbEkfsfyA1Y+4TQQ">
+                      <field name="FIELDNAME">PEGANGAN</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="~ou~Y|{hJm.zsRKNNI3W" inline="false" x="330" y="490">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="xvFc(fL/9|ndIgLE;Fc!">
+          <field name="FIELDNAME">HANDLE (TEXT)</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="F796a`|zy|vn.CAn=q;q">
+          <value name="IF0">
+            <block type="logic_compare" id=")5hQDL?e}S%ajWYWL=]f">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="j3k#5YhdO~]ctxi)PBL_">
+                  <field name="VAR" id="_rhMZ@`Q[DK;/rK;W^5=">handle</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="1;5$85P94XfG@vEQ2p){">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="~JQxsrLL}L-h7dq?T{R`">
+              <field name="VAR" id="_rhMZ@`Q[DK;/rK;W^5=">handle</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id="KHjl2:$rM!W-~|AT9RpE">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+              <next>
+                <block type="playAnimationAdv" id="wGw~putIi3?:RT^.7J1}">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+                  <field name="REVERSED">FALSE</field>
+                  <field name="LOOP">LoopOnce</field>
+                  <value name="VALUE">
+                    <shadow type="animationList" id="EL;Q|RdG~Q8k]0z*Pu)k">
+                      <field name="FIELDNAME">PEGANGAN</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1134" viewport-y="37" viewport-w="768" viewport-h="472.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
